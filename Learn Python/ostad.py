@@ -137,4 +137,48 @@ for char in b:
                         print(b_new)
 
                         #while loop
-                        
+                        a=[1,2,3,4,5,6,7,8,9]
+                        result = 0
+                        i=0
+                        n = len(a)
+                        while i < n:
+                            result += a[i]
+                            i +=1
+                            print(result)
+                            a= [-10, 2,19,4,-5,6,-7,8,9]
+                            i=0
+                            while i < len(a):
+                                if a[i] < 0:
+                                    print(f"Negative number found:{a[i]}")
+                                    break
+                                i +=1
+                            else:
+                                print("No negative number found")
+                                #set
+                                s = {1,2,3,4,5,5,4,3,2,1}
+                                print(s)
+                                #union AND intersection
+                                a = {1,2,3,4}
+                                b = {3,4,5,6}
+                                print(a.union(b))
+                                print(a.intersection(b))
+                                #dictionary
+                                a = {'name':'Rahin', 'age':23, 'city':'Dhaka'}
+                                print(a['name'])
+                                a['age'] = 24
+                                print(a)
+                                a['profession'] = 'Student'
+                                print(a)
+                                for key in a:
+                                    print(f"{key}:{a[key]}")
+                                    for key, value in a.items():
+                                        print(f"{key}:{value}")
+                                    print(-----------------------)
+                                    a=[1,2,3]
+                                    b=['mango','banana','orange']
+                                    print(dict(zip(a,b)))
+                                    #dictionary comprehension
+                                    num =list(range(0,11))
+                                    result = {i: "Even" if i%2==0 else "odd" for i in mun}
+                                    print(result)
+                                    
